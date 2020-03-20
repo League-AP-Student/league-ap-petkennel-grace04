@@ -6,9 +6,11 @@ public class Kennel {
 	/** For every Pet in the kennel, print the name followed by
 	 * the result of a call to its speak method, one line per Pet
 	 */
+	
 	public void allSpeak(){
 		/* code goes here */
+		for(Pet every : petList) {
+			System.out.println(every.getName() + every.speak());
+		}
 	}
-	
-	
 }
